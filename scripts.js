@@ -4,12 +4,12 @@ function setup() {
 function draw() {
   angle = PI / 14;
   translate(width / 1.5, height / 2);
-  treeBranch(180, 1);
+  treeBranch(180);
 }
-function treeBranch(length, x) {
+function treeBranch(length) {
   noFill();
   rect(0, 0, -length, -length);
-  translate(-length, x);
+  translate(-length);
   if (length > 10) {
     push();
     rotate(-angle);
